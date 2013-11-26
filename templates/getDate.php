@@ -1,0 +1,1 @@
+	<p><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?></p>

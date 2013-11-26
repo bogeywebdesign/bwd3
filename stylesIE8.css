@@ -1,0 +1,13 @@
+/*
+  Fixes for IE8
+*/
+
+/* ignores padding at top of fieldset and only get spacing this way */
+legend {
+  margin:0 0 1em;
+}
+
+/* padding is already set to 0, but if you don't, the bullets on the list doesn't show.  Apparently, at Microsoft, this makes sense somehow. */
+#comments li img {
+  padding:0;
+}

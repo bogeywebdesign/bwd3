@@ -1,0 +1,28 @@
+/*
+  Fixes for IE7
+*/
+
+/* ignores fix rule for some reason and keeps multiplying font size (1.4em * 1.4 em, etc) */
+li li, li p{
+  font-size:1em;
+}
+
+/* ignores padding at top of fieldset and only get spacing this way */
+legend {
+  margin:0 0 1em;
+}
+
+/* adds additional padding on this for some reason */
+input.submit {
+  padding:.1em .25em;
+}
+
+/* only way to get the prev / next post to go on same line correctly */
+#content p.paginate span {
+  float:left;
+}
+
+/* pushes down author for no apparent reason */
+#comments li img + p {
+  margin-top: -1.6em;
+}

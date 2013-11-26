@@ -1,0 +1,534 @@
+/*  
+Theme Name:Bwd 3
+Theme URI: http://www.bogeywebdesign.com/my-portfolio/wordpress-themes/bwd-3/
+Description: Minimalist Theme Template for WordPress designers to build upon.  Also works fine as a standalone minimalist theme.  Works in the following browsers: IE7+, FF 3.5.x+, Safari, Chrome.  Has options to put intro header and text on the home page (custom or normal).  Options to store URLs for many social networking profiles (twitter, facebook, delicious, etc) and then toggle them in or out of both a custom home page and/or a social networking block.  Both the custom home page and social networking block can also be toggled on/off - so you can set them to your liking, then switch them on and off at will.  Options page allows you to configure the various theme options easily.
+Author: Bogey Web Design
+Author URI: http://www.bogeywebdesign.com/
+Tags: two-columns, fixed-width, right-sidebar
+Version: 1.01
+*/
+
+
+/* reset */
+  * {
+  	margin:0;
+  	padding:0;
+  	border:0;
+  }
+
+  body {
+    background:#fff;
+    color:#666;
+  	font:62.5%/1.5em "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif; /* sets 1em to be 10px in most browsers */
+  }
+/* end reset */
+
+
+/* links */
+  a {
+    color:#006;
+  }
+
+  a:hover {
+    color:#02B;
+    text-decoration:none;
+  }
+  
+  a:visited {
+    color:#ccc;
+  }
+
+  a img {
+  	border:0;
+  }
+/* end links */
+
+
+/* headers */
+  h1,h2,h3,h4,h5,h6 {
+    line-height:1.5em;
+    margin:0 0 1em;
+  }
+  
+  h1 {
+    font-size:2em;
+  }
+  
+  h2 {
+    font-size:1.5em;
+  }
+  
+  h3 {
+    font-size:1.25em;
+  }
+  
+  h4,h5,h6 {
+    font-size:1.1em;
+  }
+/* end headers */
+
+
+/* phrase elements */
+  p, dt, dd, address, th, td, li, pre, code {
+  	font:1.4em/1.5em "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+  	margin:0 0 1em;
+  }
+  
+    p *, dt *, dd *, address *, th *, td *, li *, pre *, code * {
+      font-size:1em;
+    }
+  
+  p {
+    
+  }
+  
+  em {
+    
+  }
+  
+  strong {
+    
+  }
+  
+  abbr, acronym {
+    border-bottom:1px dashed;
+  }
+  
+  address {
+    font-style:italic;
+  }
+  
+  pre, code {
+    display:block;
+  	font-family:courier, monospace;
+  	margin:0 0 1em;
+  }
+
+  blockquote, cite {
+  	font-style:italic;
+    margin:2em;
+  }
+
+    blockquote *, cite * {
+      font-style:italic;
+    }
+/* end phrase elements */
+
+
+/* lists */
+  ol,ul {
+    margin:1em 0 1em 1em;
+  }
+  
+    li ul, li ol {
+      margin:.5em 0 .5em 1em;
+    }
+  
+  ol {
+    
+  }
+  
+    ol li {
+      list-style-type:decimal;
+    }
+  
+      li ol li {
+        list-style-type:upper-latin;
+      }
+  
+        li li ol li {
+          list-style-type:lower-latin;
+        }
+  
+  ul {
+    
+  }
+  
+    ul li {
+      list-style-type:disc;
+    }
+  
+      li ul li {
+        list-style-type:circle;
+      }
+  
+        li li ul li {
+          list-style-type:square;
+        }
+  
+    li {
+      margin:0 0 .5em 1em;
+    }
+    
+  dl {
+    margin:1em 0;
+  }
+  
+    dt {
+      font-weight:bold;
+    }
+    
+    dd {
+      font-style:italic;
+    }
+/* end lists */
+
+
+/* forms */
+  form {
+    
+  }
+  
+    fieldset {
+      border:1px solid #ccc;
+      margin:0 0 1em;
+      padding:1em;
+    }
+    
+      legend {
+        font-weight:bold;
+        font-variant:small-caps;
+        font-size:1.4em;
+  		  padding:0 1em;
+      }
+
+      label {
+        font-size:1.4em;
+        display:block;
+      	font-weight:bold;
+      }
+      
+      input, textarea, select {
+    		border:1px solid #ccc;
+    		margin:0 0 1em;
+      }
+      
+      input, textarea {
+        padding:.25em;
+      }
+      
+      input {
+        
+      }
+
+    	input.submit {
+    	  padding:.2em .25em;/* for some reason buttom ends up slightly bigger if not for this */
+    		background:#eee;
+    		text-align:center;
+    	}
+
+    	input.submit:hover {
+    		background:#ccc;
+    	}
+      
+      textarea {
+        display:block;
+      }
+      
+      select {
+        
+      }
+      
+        optgroup {
+          margin-left:1em;
+        }
+      
+          option {
+            padding:.3em;
+          }
+/* end forms */
+
+
+/* tables */
+  table {
+    border-collapse:collapse;
+    margin:0 0 1em;
+  }
+  
+    th, td {
+      margin:0;
+      padding:.25em;
+      vertical-align:top;
+    }
+    
+    th {
+      text-align:left;
+      font-weight:bold;
+    }
+    
+    td {
+      
+    }
+/* end tables */
+
+
+/* WordPress & common styles */
+  .clear {
+  	clear:both;
+  }
+
+  img.centered, .aligncenter, div.aligncenter {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  img.alignright, img.alignleft {
+    display:inline;
+  }
+
+  .alignright {
+    float:right;
+  }
+
+  .alignleft {
+    float:left;
+  }
+/* end WordPress & common styles */
+
+
+/* begin social networking */
+ul#socialNetworking {
+  margin-left:0;
+  overflow:auto;
+}
+
+  ul#socialNetworking li {
+    list-style-type:none;
+    margin-left:0;
+  }
+    
+  .customHP ul#socialNetworking li {
+    float:left;
+    width:33%;
+  }
+
+    ul#socialNetworking li img {
+      margin-bottom:-.3em;
+    }
+/* end social networking */
+
+
+/* sections */
+  /* header */
+  #header {
+    background:#fff;
+  }
+  
+  #header > div:first-child {
+    width:100em;
+    margin:0 auto 1em;
+    padding-top:1em;
+  }
+  
+    /* blog title */
+    #header form + p {
+      font-size:2em;
+      margin-bottom:0;
+      font-variant:small-caps;
+    }
+    /* end blog title */
+    
+    /* blog tagline */
+    #header p + p {
+      font-size:1.5em;
+      font-style:italic;
+    }
+    /* end blog tagline */
+  
+    #header fieldset {
+      border:0;
+      padding:0;
+      margin:.5em 0 0;
+      float:right;
+    }
+  
+      #header fieldset input {
+        margin:0;
+      }
+  
+    /* main navigation */
+    #header ul {
+      text-align:center;
+    }
+    
+      #header li {
+        display:inline;
+      }
+    
+        #header li * {
+          display:inherit;
+          margin:0;
+        }
+    /* end main navigation */
+  /* end header */
+
+
+  /* wrapper */
+  #wrapper {
+    width:100em;
+    margin:2em auto;
+    overflow:auto;
+  } 
+  
+    /* content */
+    #content {
+    	float:left;
+    	width:74%;
+    }
+    
+      /* home page only text */
+      #content #introText {
+        margin:0 0 2em;
+      }
+    
+      /* posts and pages */
+      #content .post, #content .page {
+        margin:0 0 2em;
+      }
+  
+        .post p, .page p {
+        	text-indent:1.5em;
+        }
+      
+        /* article / page title */
+        #content .post h1, #content .page h1 {
+          margin-bottom:0;
+        }
+      
+        /* date (post) */
+        #content .post h1 + p {
+          text-indent:0;
+          margin-bottom:0;
+        }
+        
+        /* byline and categories */
+        #content .post h1 + p + p {
+          text-indent:0;
+          margin-bottom:2em;
+        }
+      
+        /* tags */
+        #content .post p:last-child {
+          text-indent:0;
+          margin:2em 0 0;
+        }
+      
+        /* number of comments */
+        #content .post + p {
+        }
+      
+        /* next / previous post */
+        #content p.paginate {
+          margin:0 0 2em;
+          overflow:auto;
+        }
+      
+          #content p.paginate span + span {
+            float:right;
+            margin-left:2em;
+          }
+        
+        /* comments */
+        #comments > p:first-child, #trackBacks > p:first-child {
+          border-bottom:.1em solid #ccc;
+          padding-bottom:.5em;
+        }
+        
+        #comments li, #trackBacks li {
+          margin:0 0 2em 2em;
+        }
+      
+          #comments li img {
+            float:right;
+            margin:0 0 1em 1em;
+          }
+        
+          #comments img + p, #trackBacks p:first-child {
+            margin:0;
+          }
+          
+        #response label em {
+          color:red;
+        }
+        
+        #response input {
+          width:99%;
+        }
+        
+        #response input.submit {
+          width:auto;
+        }
+        
+        #response textarea {          
+          width:99%;
+          height:10em;
+        }
+        /* end comments */
+        
+      /* end posts and pages */
+      
+      /* 404 page */
+        #page404 li {
+          display:inline;
+        }
+      /* end 404 page */
+      
+    /* end content */
+
+
+    /* sidebar */
+    #sidebar {
+    	float:right;
+    	width:22%;
+    }
+    
+      #sidebar p strong {
+        display:block;
+        font-variant:small-caps;
+        margin:2em 0 1em;
+      }
+      
+      #sidebar p:first-child strong {
+        margin-top:0;
+      }
+      
+        #sidebar p#tagCloud a {
+          line-height:1.25em;
+        }
+        
+      #sidebar li {
+        margin-left:.5em;
+      }
+    /* end siderbar */
+    
+  /* end wrapper */
+	
+	
+	/* footer */
+  #footer {
+    width:100em;
+    margin:1em auto 0;
+    padding-bottom:1em;
+  	text-align:center;
+  }
+  
+    /* footer navigation */
+    #footer li {
+      display:inline;
+      list-style-type:none;
+    }
+    
+      #footer li * {
+        display:inherit;
+        margin:0;
+      }
+    /* end footer navigation */
+    
+    #footer p + p {
+      margin-top:-1em;
+    }
+    
+  /* end footer */
+  
+/* end sections */
